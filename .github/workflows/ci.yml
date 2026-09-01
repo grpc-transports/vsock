@@ -39,7 +39,7 @@ jobs:
     name: vet + gofmt + coverage (amd64)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-go@v7
         with:
@@ -77,7 +77,7 @@ jobs:
     name: test (arm64, native)
     runs-on: ubuntu-24.04-arm
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-go@v7
         with:
@@ -112,7 +112,7 @@ jobs:
             image: debian:trixie
             qemu_cpu: qemu
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-go@v7
         with:
