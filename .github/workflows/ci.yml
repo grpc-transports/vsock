@@ -75,7 +75,7 @@ jobs:
   # Native arm64 run on a real arm64 runner.
   test-arm64:
     name: test (arm64, native)
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-26.04-arm
     steps:
       - uses: actions/checkout@v7
 
